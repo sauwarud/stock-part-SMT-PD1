@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>ABC Stock</title></head>
+<body>
+<h2>ABC Stock</h2>
+<input id="name" placeholder="สินค้า">
+<input id="qty" type="number">
+<button onclick="add()">เพิ่ม</button>
+<ul id="list"></ul>
+<script>
+let data=[]
+function add(){
+data.push({n:name.value,q:qty.value})
+list.innerHTML+=`<li>${name.value}-${qty.value}</li>`
+}
+</script>
+</body>
+</html>
